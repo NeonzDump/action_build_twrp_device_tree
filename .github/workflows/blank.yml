@@ -42,7 +42,7 @@ jobs:
       
     - name: Start build
       run: |
-      m *.img recovry.img
+        mv *.img recovry.img
         python3 -m twrpdtgen -o dt/ *.img
     - name: ZIP device tree
       run: |
